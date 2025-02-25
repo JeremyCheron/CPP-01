@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: onkeltag <onkeltag@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 21:00:27 by onkeltag          #+#    #+#             */
-/*   Updated: 2025/02/08 21:31:45 by onkeltag         ###   ########.fr       */
+/*   Updated: 2025/02/25 10:00:05 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,11 @@ void harlSwitch(char *av, Harl &harl)
 			harl.complain("ERROR");
 			break;
 		default:
-			std::cout << "Probably complaining about insignificant problems" << std::endl;
+			std::cout
+			<<	GREEN
+				"Probably complaining about insignificant problems"
+				RESET
+			<< std::endl;
 	}
 }
 
@@ -53,6 +57,10 @@ int main (int ac, char **av)
 	if (ac ==2)
 		harlSwitch(av[1], harl);
 	else
-		std::cout << "Probably complaining about insignificant problems" << std::endl;
+		std::cout
+			<<	GREEN
+				"Probably complaining about insignificant problems"
+				RESET
+			<< std::endl;
 	return (0);
 }

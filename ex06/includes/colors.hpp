@@ -1,36 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Harl.hpp                                           :+:      :+:    :+:   */
+/*   colors.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/08 21:01:05 by onkeltag          #+#    #+#             */
-/*   Updated: 2025/02/25 09:57:00 by jcheron          ###   ########.fr       */
+/*   Created: 2025/02/24 10:55:41 by jcheron           #+#    #+#             */
+/*   Updated: 2025/02/24 10:58:33 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-#include <iostream>
-#include <string>
-#include <cstdlib>
-#include "colors.hpp"
 
-class Harl
-{
-private:
-	void _debug(void);
-	void _info(void);
-	void _warning(void);
-	void _error(void);
-
-public:
-	Harl();
-	~Harl();
-	void complain(std::string level);
-
-	static const std::string DEBUG_MSG;
-	static const std::string INFO_MSG;
-	static const std::string WARNING_MSG;
-	static const std::string ERROR_MSG;
-};
+#define RED "\033[0;38;2;255;0;0m"
+#define GREEN "\033[0;38;2;0;255;0m"
+#define BLUE "\033[0;38;2;0;0;255m"
+#define YELLOW "\033[0;38;2;255;255;0m"
+#define MAGENTA "\033[0;38;2;255;0;255m"
+#define CYAN "\033[0;38;2;0;255;255m"
+#define WHITE "\033[0;38;2;255;255;255m"
+#define RESET "\033[0m"
