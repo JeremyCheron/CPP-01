@@ -6,11 +6,11 @@
 /*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 14:36:22 by jcheron           #+#    #+#             */
-/*   Updated: 2025/02/07 15:01:45 by jcheron          ###   ########.fr       */
+/*   Updated: 2025/02/25 09:36:31 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Zombie.hpp"
 
 Zombie::Zombie()
 {
@@ -23,7 +23,11 @@ Zombie::Zombie(std::string name)
 
 Zombie::~Zombie()
 {
-	std::cout << this->getName() << ": died" << std::endl;
+	std::cout
+		<< RED
+		<< this->getName()
+		<< ": died" RESET
+		<< std::endl;
 }
 
 std::string Zombie::getName(void) const {
@@ -37,5 +41,9 @@ void Zombie::setName(std::string name)
 
 void	Zombie::announce(void)
 {
-	std::cout << this->getName() << ": " << ANNOUNCE << std::endl;
+	std::cout
+		<< GREEN
+		<< this->getName()
+		<< ": " ANNOUNCE RESET
+		<< std::endl;
 }

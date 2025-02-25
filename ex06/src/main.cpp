@@ -6,7 +6,7 @@
 /*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 21:00:27 by onkeltag          #+#    #+#             */
-/*   Updated: 2025/02/25 10:00:05 by jcheron          ###   ########.fr       */
+/*   Updated: 2025/02/25 10:02:59 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,18 @@ void harlSwitch(char *av, Harl &harl)
 			break;
 		case 1:
 			harl.complain("INFO");
+			harl.complain("DEBUG");
 			break;
 		case 2:
 			harl.complain("WARNING");
+			harl.complain("INFO");
+			harl.complain("DEBUG");
 			break;
 		case 3:
 			harl.complain("ERROR");
+			harl.complain("WARNING");
+			harl.complain("INFO");
+			harl.complain("DEBUG");
 			break;
 		default:
 			std::cout

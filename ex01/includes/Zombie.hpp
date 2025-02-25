@@ -6,7 +6,7 @@
 /*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 14:32:40 by jcheron           #+#    #+#             */
-/*   Updated: 2025/02/07 15:26:47 by jcheron          ###   ########.fr       */
+/*   Updated: 2025/02/25 09:40:56 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+#include "colors.hpp"
 
 #define ANNOUNCE "BraiiiiiiinnnzzzZ..."
 

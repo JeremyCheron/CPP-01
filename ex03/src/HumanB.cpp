@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: onkeltag <onkeltag@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 17:21:05 by jcheron           #+#    #+#             */
-/*   Updated: 2025/02/08 20:29:18 by onkeltag         ###   ########.fr       */
+/*   Updated: 2025/02/25 09:48:05 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,11 @@ void HumanB::setWeapon(Weapon &weapon)
 
 void HumanB::attack(void)
 {
-	std::cout << this->_name << " attacks with their " << this->_weapon->getType() << std::endl;
+	std::cout
+	<< GREEN
+	<< this->_name
+	<< " attacks with their "
+	<< this->_weapon->getType()
+	<< RESET
+	<< std::endl;
 }

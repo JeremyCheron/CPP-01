@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: onkeltag <onkeltag@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 20:32:42 by onkeltag          #+#    #+#             */
-/*   Updated: 2025/02/08 20:52:43 by onkeltag         ###   ########.fr       */
+/*   Updated: 2025/02/25 09:51:38 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sed.hpp"
+#include "../includes/sed.hpp"
 
 static void replaceStrings(
 	std::ofstream &fileOut,
@@ -39,7 +39,10 @@ static void replaceStrings(
 int main (int ac, char **av)
 {
 	if (ac != 4)
-		return (std::cout << "Usage: ./sed <filename> <s1> <s2>" << std::endl, 1);
+		return (
+			std::cout
+				<< RED "Usage: ./sed <filename> <s1> <s2>" RESET
+				<< std::endl, 1);
 	else
 		{
 			std::string file = av[1];
@@ -52,12 +55,20 @@ int main (int ac, char **av)
 			file = av[1];
 			fileIn.open(file.c_str());
 			if (fileIn.good() == false)
-				return (std::cout << "Error: input file not found" << std::endl, 1);
+				return (
+					std::cout
+					<< RED "Error: input file not found" RESET
+					<< std::endl,
+					1);
 			fileOut.open((file + ".replace").c_str());
 			if (fileOut.good() == false)
 			{
 				fileIn.close();
-				return (std::cout << "Error: output file not found" << std::endl, 1);
+				return (
+					std::cout
+						<< RED "Error: output file not found" RESET
+						<< std::endl,
+						1);
 			}
 			while (getline(fileIn, buff))
 				replaceStrings(fileOut, s1, s2, buff + '\n');

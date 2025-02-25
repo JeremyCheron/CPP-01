@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: onkeltag <onkeltag@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 17:21:00 by jcheron           #+#    #+#             */
-/*   Updated: 2025/02/08 20:20:02 by onkeltag         ###   ########.fr       */
+/*   Updated: 2025/02/25 09:47:12 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include <iostream>
+#include "colors.hpp"
 
 class Weapon
 {

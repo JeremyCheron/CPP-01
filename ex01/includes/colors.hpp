@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.cpp                                         :+:      :+:    :+:   */
+/*   colors.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/07 17:21:02 by jcheron           #+#    #+#             */
-/*   Updated: 2025/02/25 09:47:37 by jcheron          ###   ########.fr       */
+/*   Created: 2025/02/24 10:55:41 by jcheron           #+#    #+#             */
+/*   Updated: 2025/02/24 10:58:33 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
+#pragma once
 
-HumanA::HumanA(std::string name, Weapon &weapon) : _weapon(weapon)
-{
-	this->_name = name;
-	this->_weapon = weapon;
-}
-
-HumanA::~HumanA()
-{
-}
-
-void HumanA::attack(void)
-{
-	std::cout
-		<< RED
-		<< this->_name
-		<< " attacks with their "
-		<< this->_weapon.getType()
-		<< RESET
-		<< std::endl;
-}
+#define RED "\033[0;38;2;255;0;0m"
+#define GREEN "\033[0;38;2;0;255;0m"
+#define BLUE "\033[0;38;2;0;0;255m"
+#define YELLOW "\033[0;38;2;255;255;0m"
+#define MAGENTA "\033[0;38;2;255;0;255m"
+#define CYAN "\033[0;38;2;0;255;255m"
+#define WHITE "\033[0;38;2;255;255;255m"
+#define RESET "\033[0m"

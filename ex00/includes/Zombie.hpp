@@ -6,13 +6,14 @@
 /*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 14:32:40 by jcheron           #+#    #+#             */
-/*   Updated: 2025/02/07 15:05:03 by jcheron          ###   ########.fr       */
+/*   Updated: 2025/02/25 09:33:40 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include <iostream>
 #include <string>
+#include "colors.hpp"
 
 #define ANNOUNCE "BraiiiiiiinnnzzzZ..."
 

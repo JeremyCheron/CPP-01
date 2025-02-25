@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: onkeltag <onkeltag@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jcheron <jcheron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 17:20:57 by jcheron           #+#    #+#             */
-/*   Updated: 2025/02/08 20:21:20 by onkeltag         ###   ########.fr       */
+/*   Updated: 2025/02/25 09:47:09 by jcheron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include "Weapon.hpp"
+#include "colors.hpp"
 
 class HumanB
 {
